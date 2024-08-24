@@ -9,26 +9,21 @@
 ### 1. [Course Information]()
 ---
 ### 2. [Additional Resources]()
-
 ---
 ### 3. [Lectures-Notes]()
-
 --- 
 ### 4. [Homeworks]()
-
-
-
 ---
-### 5. [Project]()
-
+### 5. [Labs]()
 ---
-### 6. [Midterm Sample Questions]()
+### 6. [Sample Midterm Exams]()
 
 --- 
 
 > [!IMPORTANT]
-> ***This Course is meant to introduce you to the analysis of data structures and algorithms, computational complexity, and the design of efficient data-handling procedures.***
+> ***This Course is meant to introduce you to the design concepts of high-level programming languages, with a focus on a survey of existing languages and practical experience using Python and Haskell. You will explore the fundamental principles behind language design, understand the differences and similarities between various languages, and gain hands-on experience in writing and analyzing programs in both Python and Haskell.***
 > ***The Work and Material in this Repo is meant to provide assistance; there is a possibility that a few things here and there are not correct, so please check all contents yourself.***
+
 
 
 
