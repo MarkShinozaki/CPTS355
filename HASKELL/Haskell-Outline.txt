@@ -1,0 +1,9 @@
+- Haskell (Variable Bindings, Functions, Tuples, Lists)
+
+- Haskell (Pattern Matching, Recursive Functions)
+
+- Haskell (Tail Recursion) 
+
+- Haskell (Higher-order functions: Map, Fold, Filter) 
+
+- Haskell (Data types, Recursive Types, Trees)
