@@ -22,12 +22,12 @@
 ### 5. [Project]()
 
 ---
-### 6. [Sample Exam Questions]()
+### 6. [Midterm Sample Questions]()
 
 --- 
 
 > [!IMPORTANT]
-> ***This Course is meant to introduce you to the analysis of data structures and algorithms, computational complexity, and the design of efficient data-handling procedures. Topics include sorting algorithms, dynamic programming, graph theory, NP-completeness, and various algorithmic strategies like divide and conquer, greedy algorithms, and amortized analysis. You will also explore real-world applications in bioinformatics, cryptography, and network design.***
+> ***This Course is meant to introduce you to the analysis of data structures and algorithms, computational complexity, and the design of efficient data-handling procedures.***
 > ***The Work and Material in this Repo is meant to provide assistance; there is a possibility that a few things here and there are not correct, so please check all contents yourself.***
 
 
