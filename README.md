@@ -141,27 +141,164 @@ IInt 12
 - Part (b): `createtree` - 12%
   - **Task**: Convert a standard tree into an LTree (labeled tree) with levels stored in nodes.
 
-Part (c): `binarysearch` - 12%
+- Part (c): `binarysearch` - 12%
   - **Task**: Implement a search function for the LTree data structure.
 
 - Concepts Covered: Tree construction, tree traversal, search algorithms.
 
 ### Summary of Topics Covered:
-Recursion and Tail-Recursion:
+#### 1. Recursion and Tail-Recursion:
 
-Emphasis on recursive problem-solving, including both regular and tail-recursive functions.
-Higher-Order Functions:
+- Emphasis on recursive problem-solving, including both regular and tail-recursive functions.
 
-Extensive use of map, filter, foldr, and foldl to manipulate lists and data structures without recursion.
-Custom Data Types and Pattern Matching:
+#### 2. Higher-Order Functions:
 
-Working with custom data types (IEither, BTree, LTree), focusing on data encapsulation, manipulation, and type-safe programming.
-Tree Data Structures:
+- Extensive use of map, filter, foldr, and foldl to manipulate lists and data structures without recursion.
 
-Introduction to binary trees and specialized labeled trees (LTree), covering tree construction, traversal, and searching.
-Algorithm Design:
+#### 3. Custom Data Types and Pattern Matching:
 
-Application of various algorithms for data processing, tree validation, and searching, highlighting the use of functional programming paradigms in algorithmic contexts.
+- Working with custom data types (IEither, BTree, LTree), focusing on data encapsulation, manipulation, and type-safe programming.
+
+#### 4. Tree Data Structures:
+
+- Introduction to binary trees and specialized labeled trees (LTree), covering tree construction, traversal, and searching.
+
+#### 5. Algorithm Design:
+
+- Application of various algorithms for data processing, tree validation, and searching, highlighting the use of functional programming paradigms in algorithmic contexts.
+
+--- 
+
+## [Assignment 3](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment3)
+
+#### 1. Problem 1: Cat Diet Analysis
+
+- Part a: `cat_diet(feeding_log)` (10%)
+  - **Task**: Reorganize a dictionary that tracks a cat's feeding log into a format where months are the keys, and the values are dictionaries containing the food flavors and their respective counts.
+
+  - **Key Concepts**: Dictionary manipulation, data transformation, nested data structures.
+
+- Part b: `cats_favorite(feeding_log)` (15%)
+  - **Task**: Identify the most popular cat food flavor based on the total number of cans consumed. The solution must use higher-order functions like map and reduce.
+
+  - **Key Concepts**: Higher-order functions, dictionary aggregation, functional programming.
+
+#### 2. Problem 2: Unzip Operation
+
+= **Task**: unzip(L) (15%)
+  - **Task**: Implement a function that reverses the zip operation, taking a list of 3-tuples and returning a tuple of lists, where each list contains the first, second, or third elements of the input tuples.
+    
+  - Key Concepts: List manipulation, higher-order functions (map, reduce), tuple operations.
+
+#### Problem 3: Graph Analysis
+
+- Part a: `connected(graph)` (15%)
+  - **Task**: Identify pairs of nodes in a directed graph that are connected in both directions (i.e., there is an edge from node1 to node2 and from node2 to node1).
+
+  - **Key Concepts**: Graph traversal, dictionary operations, edge detection.
+
+- Part b: `connected2(graph)` (10%)
+  - **Task**: Rewrite the connected function using list comprehension.
+  - **Key Concepts**: List comprehension, graph traversal.
+
+- Part c: `has_path(graph, node1, node2)` (15%)
+  - **Task**: Recursively determine if there is a path between two nodes in a directed graph.
+  - **Key Concepts**: Recursion, graph traversal, depth-first search.
+
+#### Problem 4: String to Nested List Conversion
+
+- **Task**: `str_to_list(input_str)` (15%)
+  - **Task**: Convert a string with nested parentheses into a nested list structure. Each pair of matching parentheses should create a new sublist.
+
+  - **Key Concepts**: Recursion, string parsing, list construction, handling nested data structures.
+
+#### 5. Testing (5%)
+
+- **Task**: Rename the provided `HW3SampleTests.py` file to `HW3Tests.py`, add additional test cases, and ensure that your solutions pass all tests. Test cases should cover boundary conditions and edge cases.
+
+- **Key Concepts**: Unit testing with Python’s unittest framework, writing comprehensive test cases.
+
+### Summary of Topics Covered:
+
+#### 1. Dictionary Manipulation:
+
+- The assignment emphasizes creating, transforming, and analyzing data stored in Python dictionaries, which is crucial for handling structured data.
+
+#### 2. Higher-Order Functions:
+
+- Problems require the use of `map`, `reduce`, and list comprehensions to perform operations without traditional loops, reinforcing functional programming practices in Python.
+
+#### 3. Recursion:
+
+- Recursive strategies are employed in several problems, particularly for graph traversal and string parsing, demonstrating the power of recursion in handling complex structures.
+
+#### 4. Graph Theory:
+
+- Problems involving graph traversal and connectivity strengthen your understanding of how to represent and analyze graphs using dictionaries and sets in Python.
+
+#### 5. String Parsing and List Construction:
+
+- Parsing strings to construct nested lists introduces techniques for handling hierarchical data and converting flat data into structured formats.
+
+#### 6. Unit Testing:
+
+- The assignment encourages rigorous testing through the unittest framework, emphasizing the importance of validating code correctness across a variety of input scenarios.
+
+---
+
+## [Assignment 4 - SPS interpreter - Project ](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4%20-%20SPS%20interpreter)
+
+
+#### 1. Skeleton Code Files:
+
+- psItems.py: Defines the Value, ArrayValue, and FunctionValue classes, which are used to represent different types of values in the interpreter. This file does not require modification in Part 1.
+
+- psOperators.py: This is the main file where you will implement the operators for the PostScript-like language. It includes the `Operators` class, which manages the operand and dictionary stacks and contains the implementations of the various operators.
+
+- tests_part1.py: Contains unit tests that will automatically verify the correctness of your implementations in `psOperators.py`.
+
+- colors.py: Provides color codes for output formatting; no changes are required for this file.
+
+#### 2. Key Components to Implement:
+
+- Operand Stack (`opstack`) and Dictionary Stack (`dictstack`):
+  - The `opstack` is used to store evaluated values, while the dictstack holds the dictionaries for variable and function definitions.
+
+- Helper Functions:
+  - `define(name, value)`: Adds a name-value pair to the top dictionary in dictstack.
+  - `lookup(name)`: Searches for a name in the `dictstack` and returns its value.
+
+- PostScript Operators:
+  - Arithmetic Operators: `add`, `sub`, `mul`, `mod`
+  - Comparison Operators: `eq`, `lt`, `gt`
+  - Array Operators: `array`, `length`, `getinterval`, `putinterval`, `aload`, `astore`
+  - Stack Operators: `pop`, `dup`, `exch`, `roll`, `copy`, `count`, `clear`, `stack`
+  - Dictionary Operators: `dict`, `begin`, `end`, `psDef`
+
+#### 3. Testing:
+
+- The `tests_part1.py` file contains comprehensive unit tests that cover various scenarios for each operator implemented in `psOperators.py`. Running these tests will help ensure that your code works as expected and handles edge cases correctly.
+
+### Summary of Topics Covered:
+
+#### 1. Stack-Based Language Concepts:
+
+- Understanding how to implement a language that relies on a stack-based evaluation model, similar to PostScript. This includes managing an operand stack for intermediate results and a dictionary stack for variable and function definitions.
+
+#### 2. Operator Implementation:
+
+- Implementing various operators, such as arithmetic, comparison, and array operations. The assignment reinforces how to manage stack operations and apply error checking for different data types and operation scenarios.
+
+#### 3. Data Structures:
+
+- Using Python lists to implement stacks and dictionaries to manage variable scopes. This assignment provides practical experience with list manipulation, including pushing, popping, and slicing lists.
+
+#### 4. Unit Testing:
+
+- The assignment emphasizes the importance of automated testing. By running the provided tests, students can verify the correctness of their code and ensure that it meets the specified requirements.
+
+
+
 
 
 
