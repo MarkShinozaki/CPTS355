@@ -13,8 +13,23 @@
 ### 3. [Lectures-Notes](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes)
 --- 
 ### 4. [Assignments](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments)
+
+- #### [Assignment 0](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment0)
+- #### [Assignment 1](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment1)
+- #### [Assignment 2](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment2)
+- #### [Assignment 3](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment3)
+- #### [Assignment 4 - SPS Interpreter - Part 1](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4%20-%20SPS%20interpreter)
+- #### [Assignment 4 - SPS Interpreter - Part 2](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4-%20SPS%20interpreter-p2)
+- #### [Assignment 5 ](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment5) 
+
+
 ---
 ### 5. [Labs](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Labs)
+
+- #### [Lab 1 - Haskell](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Labs/Lab%201)
+- #### [Lab 2 - Haskell](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Labs/Lab%202)
+- #### [Lab 3 - Python](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Labs/Lab%203)
+  
 ---
 ### 6. [Sample Midterm Exams](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Sample-Midterm-Exams)
 
