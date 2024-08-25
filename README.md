@@ -70,7 +70,98 @@ The tests help students verify the correctness of their code by comparing the ou
 
 --- 
 
+## [Assignment 2](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment2)
 
+#### 1. Problem 1: group_items (Tail-Recursive) - 10%
+
+- **Task**: Implement a function that groups items in a list based on increasing group sizes.
+
+- **Example**:
+```
+> group_items [1,2,3,4,5,6,7,8,9,10,11,12]
+[[1],[2,3],[4,5,6],[7,8,9,10],[11,12]]
+```
+- **Concepts Covered**: Tail recursion, list processing, and grouping algorithms.
+
+#### 2. Problem 2: `get_latest_nested` (Higher-Order Function) - 10%
+
+- **Task**: Find the most recent date from a nested list of dates without using recursion.
+Example:
+
+```
+> get_latest_nested [[(31,8,2022),(20,7,2023)], [(1,10,2023)], [(6,7,2023)]]
+(1,10,2023)
+```
+
+- **Concepts Covered**: Higher-order functions (`map`, `foldr`, `filter`), list manipulation.
+
+#### 3. Problem 3: study_list (Higher-Order Function) - 12%
+
+- **Task**: Given a study log, find all courses studied on a specific day using higher-order functions.
+
+- **Example**:
+
+```
+> study_list log_input "Sat"
+["CptS355", "CptS322"]
+```
+
+- **Concepts Covered**: Data filtering, list processing with higher-order functions.
+
+#### Problem 4: IEither Data Type Manipulations
+
+- Part (a): `either_sum1` (Recursive Solution) - 7%
+
+  - **Task**: Sum the values from a list of IEither elements using recursion.
+    
+  - **Example**:
+```
+> either_sum1 [[IString "1", IInt 2], [IString "4", IInt 5]]
+IInt 12
+```
+- Part (b): `either_sum2` (Higher-Order Solution) - 7%
+  - **Task**: Perform the same summation using higher-order functions instead of recursion.
+
+- Part (c): `either_filter1` (Recursive Solution) - 7%
+  - **Task**: Filter elements from nested lists based on a criterion using recursion.
+
+- Part (d): `either_filter2` (Higher-Order Solution) - 7%
+  - **Task**: Perform the same filtering using higher-order functions.
+
+- **Concepts Covered**: Data type manipulation, recursion, higher-order functions.
+
+#### Problem 5: Binary Search Tree Operations
+
+- Part (a): `isBSTtree` - 12%
+
+  - **Task**: Check if a given binary tree is a Binary Search Tree (BST).
+    
+- **Concepts Covered**: Tree traversal, validation algorithms.
+
+- Part (b): `createtree` - 12%
+  - **Task**: Convert a standard tree into an LTree (labeled tree) with levels stored in nodes.
+
+Part (c): `binarysearch` - 12%
+  - **Task**: Implement a search function for the LTree data structure.
+
+- Concepts Covered: Tree construction, tree traversal, search algorithms.
+
+### Summary of Topics Covered:
+Recursion and Tail-Recursion:
+
+Emphasis on recursive problem-solving, including both regular and tail-recursive functions.
+Higher-Order Functions:
+
+Extensive use of map, filter, foldr, and foldl to manipulate lists and data structures without recursion.
+Custom Data Types and Pattern Matching:
+
+Working with custom data types (IEither, BTree, LTree), focusing on data encapsulation, manipulation, and type-safe programming.
+Tree Data Structures:
+
+Introduction to binary trees and specialized labeled trees (LTree), covering tree construction, traversal, and searching.
+Algorithm Design:
+
+Application of various algorithms for data processing, tree validation, and searching, highlighting the use of functional programming paradigms in algorithmic contexts.
 
 
 
