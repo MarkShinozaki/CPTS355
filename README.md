@@ -151,26 +151,119 @@ preOrderTri (TriNode x t1 t2 t3) = [x] ++ preOrderTri t1 ++ preOrderTri t2 ++ pr
 - **Pattern Matching**: Integral to processing and deconstructing data types in a clean and efficient manner.
 - **The 'Maybe' Type**: Provides a safe way to handle optional values, avoiding the pitfalls of null references found in other languages.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ### [Why Funcional Programming](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL/Why-Functional-Programming)
+
+Reflection on Functional Programming:
+
+Discussion Points: Students are encouraged to reflect on their biggest takeaways from learning Haskell, challenges faced, and future plans to explore functional programming further.
+Importance of Functional Programming:
+
+Key Features:
+Heavy reliance on recursion.
+Functions as first-class objects.
+Use of higher-order functions.
+Unique data types via constructs like data.
+Reasons for Study: Functional programming helps in writing correct, elegant, and efficient software and has historically been ahead of its time, influencing many modern programming practices.
+Historical Impact of Functional Languages:
+
+Pioneering Features: Concepts such as garbage collection, generics, higher-order functions, and type inference were pioneered by functional languages long before they became mainstream in languages like Java, C#, and Python.
+Recursion: Initially controversial in the 1960s, recursion is now a fundamental concept in many modern programming languages.
+Future of Functional Programming:
+
+Emerging Trends: The lecture predicts that pattern-matching, currying, and other functional paradigms may become more mainstream in the future.
+Recent Developments in Functional Programming:
+
+Popular Functional Languages: The lecture mentions several modern functional languages such as Clojure, Erlang, F#, Haskell, OCaml, and Scala, highlighting their industry adoption and use cases.
+Adoption of Functional Concepts: Languages like C#, Java, and frameworks like MapReduce/Hadoop are increasingly adopting functional programming features.
+Combining Languages:
+
+Haskell, Python, Java, and Postscript: These languages are presented as a complementary set, each excelling in different paradigms (functional, dynamic, and object-oriented programming).
+Real-World Programming Considerations:
+
+Real Programming Needs: The lecture acknowledges that real programming extends beyond language constructs to include file I/O, string operations, floating-point arithmetic, graphics, project management, testing frameworks, and more.
+Practical Considerations:
+
+Choosing a Language: When deciding on a programming language, factors such as available libraries, tools, job prospects, industry standards, and personal familiarity are important considerations.
+Key Takeaways:
+Functional Programming's Influence: Functional programming has significantly influenced modern software development, introducing many features now common in mainstream languages.
+Industry Adoption: The concepts pioneered by functional languages are increasingly being integrated into widely-used programming languages, demonstrating the relevance of functional programming principles.
+Language Choice: The choice of programming language depends not only on its features but also on practical considerations like available tools, industry demand, and job opportunities.
+
+
 
 ### [Higher Order Functions Class Excercise](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL/Higher-Order-Functions-Class-Excercises)
 
+Higher-Order Functions:
+
+Definition: Functions that take other functions as arguments or return them as results.
+Key Functions:
+map: Applies a function to each element in a list.
+filter: Selects elements from a list that satisfy a predicate.
+foldr/foldl: Reduces a list to a single value by recursively applying a function.
+Class Exercises:
+
+get_seconds:
+
+Task: Extract the second element from each tuple in a list.
+Key Function: map
+Example:
+
+```
+> get_seconds [(1,'H'),(2,'A'),(3,'S'),(4,'K'),(5,'E'),(6,'L'),(7,'L')]
+"HASKELL"
+```
+get_outof_range:
+
+Task: Return elements from a list that are less than a minimum value or greater than a maximum value.
+Key Function: filter
+Example:
+
+```
+> get_outof_range (-5) 5 [10,5,0,1,2,-5,-10]
+[10,-10]
+```
+count_outof_range:
+
+Task: Count the number of elements in a list that are out of a specified range.
+Key Function: filter, length
+Example:
+
+```
+> count_outof_range (-5) 5 [10,5,0,1,2,-5,-10]
+2
+```
+nested_count_outof_range:
+
+Task: Count the number of out-of-range elements in a nested list structure.
+Key Function: map, filter, length
+Example:
+
+```
+> nested_count_outof_range (-5) 5 [[10,5,0,1,2,-5,-10],[4,2,-1,3,-4,8,5,9,4,10],[-5,-6,7,8]]
+8
+```
+
+find_routes:
+
+Task: Identify bus routes that stop at a specified location using higher-order functions.
+Key Function: filter, elem
+Example:
+
+
 ### [Sample Functions](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL/Sample-Functions)
 
+#### Sample Functions:
 
+- The `SampleFunctions.hs` file contains various Haskell functions that perform simple computations or data manipulations. These functions are the target of the test cases defined in the HUnit test file.
+- **Examples of Possible Functions**:
+  - A function to calculate the sum of a list.
+  - A function to find the maximum value in a list.
+  - A function to reverse a string.
 
+### Key Takeaways:
+- Elimination of Explicit Recursion: Haskell's higher-order functions allow for elegant solutions to common programming problems without resorting to explicit recursion.
+- Function Composition: By combining functions like map, filter, and fold, complex operations can be expressed in a clear and concise manner.
+Abstraction: Higher-order functions encapsulate common patterns of computation, enabling code that is both reusable and easy to reason about.
 
 ---
 
