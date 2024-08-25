@@ -1,7 +1,7 @@
 # Lecture Notes
 
 
-## Haskell 
+## [Haskell](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL)
 
 
 
@@ -16,7 +16,7 @@
 
 
 
-## Python
+## [Python](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON)
 
 
 
