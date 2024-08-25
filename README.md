@@ -297,6 +297,131 @@ IInt 12
 
 - The assignment emphasizes the importance of automated testing. By running the provided tests, students can verify the correctness of their code and ensure that it meets the specified requirements.
 
+--- 
+
+## [Assignment 4 - SPS interpreter part 2 - Project ](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4-%20SPS%20interpreter-p2)
+
+#### 1. Key Components to Implement:
+
+- **Additional Operators in `psOperators.py`**:
+
+- **Conditional Operators**: Implement the `if` and `ifelse` operators, which execute blocks of code based on a condition.
+
+- **Loop Operators**: Implement the `repeat` and `forall` operators, which allow for repeated execution of code blocks over a specified range or collection.
+
+- **Enhanced Expression Handling in `psItems.py`**:
+  - Blocks and Functions: Extend the Block class to handle code arrays, and the FunctionValue class to represent user-defined functions. These changes allow the interpreter to evaluate user-defined functions and code blocks.
+
+- Parser and Evaluation Enhancements in `psParser.py`:
+  - **Expression Parsing**: Extend the parser to handle complex expressions, including arrays and blocks. This involves tokenizing input strings, building the corresponding expression trees, and ensuring the correct evaluation order.
+
+- **REPL (Read-Eval-Print Loop) in `repl.py`**:
+  - Implement a basic interactive loop that continuously reads input, evaluates it, and prints the result. This REPL allows users to interact with the interpreter directly from the command line.
+
+- **Test Cases in `tests_part2.py`**:
+  - Comprehensive test cases that verify the correctness of all operators and the overall functionality of the interpreter. These tests ensure that the interpreter behaves as expected across a variety of scenarios.
+
+#### 2. Supporting Files:
+
+- `buffer.py`: Manages the input buffer, allowing the interpreter to process the input string one token at a time.
+
+- `utils.py`: Provides utility functions for formatting and processing strings and other data.
+
+- `load.py`: Contains examples and test cases that demonstrate how the interpreter handles different PostScript operations.
+
+- `colors.py`: Provides constants for colored output in the terminal, making the REPL's output more readable.
+
+### Summary of Topics Covered:
+#### 1. Advanced Stack Manipulation:
+
+- Extending the stack-based operations to handle complex data types like arrays and blocks, as well as implementing the full suite of PostScript operators.
+
+#### 2. Conditional Logic:
+
+- Implementing conditional statements (`if`, `ifelse`) that allow the interpreter to execute different code paths based on evaluated conditions.
+
+#### 3. Looping Constructs:
+
+- Implementing looping constructs (`repeat`, `forall`) to execute code multiple times, either a fixed number of times or once per element in a collection.
+
+#### 4. Expression Parsing and Evaluation:
+
+- Enhancing the parser to handle nested expressions, arrays, and blocks, ensuring that the interpreter correctly processes and evaluates these complex structures.
+
+#### 5. Interactive Interpreter Development:
+
+- Building a REPL that allows users to interactively test the interpreter, providing real-time feedback on how the interpreter processes and evaluates input.
+
+#### 6. Unit Testing:
+
+- Comprehensive unit testing ensures that all implemented features work correctly and that edge cases are handled gracefully.
+
+--- 
+
+## [Assignment 4 - SPS interpreter part 2 - Project ](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4-%20SPS%20interpreter-p2)
+
+
+#### 1. Key Components to Implement:
+
+Additional Operators in psOperators.py:
+Conditional Operators: Implement the if and ifelse operators, which execute blocks of code based on a condition.
+Loop Operators: Implement the repeat and forall operators, which allow for repeated execution of code blocks over a specified range or collection.
+Enhanced Expression Handling in psItems.py:
+Blocks and Functions: Extend the Block class to handle code arrays, and the FunctionValue class to represent user-defined functions. These changes allow the interpreter to evaluate user-defined functions and code blocks.
+Parser and Evaluation Enhancements in psParser.py:
+Expression Parsing: Extend the parser to handle complex expressions, including arrays and blocks. This involves tokenizing input strings, building the corresponding expression trees, and ensuring the correct evaluation order.
+REPL (Read-Eval-Print Loop) in repl.py:
+Implement a basic interactive loop that continuously reads input, evaluates it, and prints the result. This REPL allows users to interact with the interpreter directly from the command line.
+Test Cases in tests_part2.py:
+Comprehensive test cases that verify the correctness of all operators and the overall functionality of the interpreter. These tests ensure that the interpreter behaves as expected across a variety of scenarios.
+Supporting Files:
+
+buffer.py: Manages the input buffer, allowing the interpreter to process the input string one token at a time.
+utils.py: Provides utility functions for formatting and processing strings and other data.
+load.py: Contains examples and test cases that demonstrate how the interpreter handles different PostScript operations.
+colors.py: Provides constants for colored output in the terminal, making the REPL's output more readable.
+Summary of Topics Covered:
+Advanced Stack Manipulation:
+
+Extending the stack-based operations to handle complex data types like arrays and blocks, as well as implementing the full suite of PostScript operators.
+Conditional Logic:
+
+Implementing conditional statements (if, ifelse) that allow the interpreter to execute different code paths based on evaluated conditions.
+Looping Constructs:
+
+Implementing looping constructs (repeat, forall) to execute code multiple times, either a fixed number of times or once per element in a collection.
+Expression Parsing and Evaluation:
+
+Enhancing the parser to handle nested expressions, arrays, and blocks, ensuring that the interpreter correctly processes and evaluates these complex structures.
+Interactive Interpreter Development:
+
+Building a REPL that allows users to interactively test the interpreter, providing real-time feedback on how the interpreter processes and evaluates input.
+Unit Testing:
+
+Comprehensive unit testing ensures that all implemented features work correctly and that edge cases are handled gracefully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
