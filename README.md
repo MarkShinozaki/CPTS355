@@ -358,47 +358,65 @@ IInt 12
 
 --- 
 
-## [Assignment 4 - SPS interpreter part 2 - Project ](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment4-%20SPS%20interpreter-p2)
+## [Assignment 5](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments/Assignment5)
 
 
-#### 1. Key Components to Implement:
+#### 1. Project Description:
 
-Additional Operators in psOperators.py:
-Conditional Operators: Implement the if and ifelse operators, which execute blocks of code based on a condition.
-Loop Operators: Implement the repeat and forall operators, which allow for repeated execution of code blocks over a specified range or collection.
-Enhanced Expression Handling in psItems.py:
-Blocks and Functions: Extend the Block class to handle code arrays, and the FunctionValue class to represent user-defined functions. These changes allow the interpreter to evaluate user-defined functions and code blocks.
-Parser and Evaluation Enhancements in psParser.py:
-Expression Parsing: Extend the parser to handle complex expressions, including arrays and blocks. This involves tokenizing input strings, building the corresponding expression trees, and ensuring the correct evaluation order.
-REPL (Read-Eval-Print Loop) in repl.py:
-Implement a basic interactive loop that continuously reads input, evaluates it, and prints the result. This REPL allows users to interact with the interpreter directly from the command line.
-Test Cases in tests_part2.py:
-Comprehensive test cases that verify the correctness of all operators and the overall functionality of the interpreter. These tests ensure that the interpreter behaves as expected across a variety of scenarios.
-Supporting Files:
+- **SSPS (Scoped Simple PostScript)**: SSPS is a variant of the Simple PostScript language that supports both static and dynamic scoping. Unlike the original SPS, SSPS does not have `dict`, `begin`, or `end` operations. Instead, a new dictionary (activation record) is automatically pushed onto the dictionary stack when a function is called and popped when the function execution completes.
 
-buffer.py: Manages the input buffer, allowing the interpreter to process the input string one token at a time.
-utils.py: Provides utility functions for formatting and processing strings and other data.
-load.py: Contains examples and test cases that demonstrate how the interpreter handles different PostScript operations.
-colors.py: Provides constants for colored output in the terminal, making the REPL's output more readable.
-Summary of Topics Covered:
-Advanced Stack Manipulation:
+- **Scoping Rules**:
+  
+  - **Static Scoping**: The scope is determined by the location of the function’s definition in the code. Each activation record (AR) contains a static link pointing to the dictionary where the function was defined.
+    
+  - **Dynamic Scoping**: The scope is determined by the runtime call stack. Each activation record references the dictionary at the time of the function call.
 
-Extending the stack-based operations to handle complex data types like arrays and blocks, as well as implementing the full suite of PostScript operators.
-Conditional Logic:
+#### 2. Key Components to Implement:
 
-Implementing conditional statements (if, ifelse) that allow the interpreter to execute different code paths based on evaluated conditions.
-Looping Constructs:
+- Modification to Existing Files:
+  - **psItems.py**:
+    - Update the `FunctionValue` class to handle static and dynamic scoping. When a function is called, a new activation record is pushed onto the dictionary stack, and when the function execution is done, the AR is popped.
 
-Implementing looping constructs (repeat, forall) to execute code multiple times, either a fixed number of times or once per element in a collection.
-Expression Parsing and Evaluation:
+  - **psOperators.py**:
+    - Modify methods such as `lookup`, `define`, `stack`, `dictPush`, `psIf`, `psIfelse`, `repeat`, and `forall` to handle the new scoping rules.
 
-Enhancing the parser to handle nested expressions, arrays, and blocks, ensuring that the interpreter correctly processes and evaluates these complex structures.
-Interactive Interpreter Development:
+    - Remove `psDict`, `begin`, and `end` methods, as SSPS does not use these operations.
 
-Building a REPL that allows users to interactively test the interpreter, providing real-time feedback on how the interpreter processes and evaluates input.
-Unit Testing:
+  - **psParser.py**:
+    - Ensure that parsing handles the new scoping mechanisms when interpreting PostScript code.
 
-Comprehensive unit testing ensures that all implemented features work correctly and that edge cases are handled gracefully.
+- **Additional Files Provided**:
+  - **repl.py**: Updated to handle the command-line argument --static to choose between static and dynamic scoping.
+
+  - **load.py**: Updated to run test cases with both static and dynamic scoping, comparing the results.
+
+#### 3. Testing and Running the Interpreter:
+
+- **Test Cases**:
+  - Test cases provided in load.py and tests_part2.py will evaluate the functionality of your interpreter under both static and dynamic scoping rules.
+
+- Running the Interpreter:
+  - Use `repl.py` with the `--static` argument to start the interpreter with static scoping. Without the argument, the interpreter defaults to dynamic scoping.
+
+### Summary of Topics Covered:
+
+#### 1. Static vs Dynamic Scoping:
+
+- Understanding and implementing static and dynamic scoping rules is crucial for programming languages and interpreter design. This assignment requires you to differentiate between these scoping methods and apply them correctly within the interpreter.
+
+#### 2. Interpreter Design:
+
+- Extending an interpreter to handle advanced language features such as scoping, function calls, and activation records deepens your understanding of language processing and execution.
+
+#### 3. Data Structure Management:
+
+- Modifying the dictionary stack to handle tuples with static links teaches you how to manage more complex data structures that are essential for maintaining state and scope information in interpreters.
+
+#### 4. Function Evaluation:
+
+- Updating function evaluation to correctly handle scoping rules, especially managing the lifecycle of activation records during function calls, is a key concept in implementing language interpreters.
+
+
 
 
 
