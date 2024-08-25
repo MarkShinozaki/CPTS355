@@ -1,1 +1,29 @@
 # Lecture Notes
+
+
+## Haskell 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Python
+
+
+
+
+
+
+
+
+
+
