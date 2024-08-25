@@ -272,7 +272,80 @@ Abstraction: Higher-order functions encapsulate common patterns of computation, 
 
 ### [Python - Part 1 - Basics](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20-%20Part1%20-%20Basics)
 
+Python Lists:
+What is a List?
+
+Definition: A list is an ordered sequence of elements, which can be of any type (integers, strings, etc.).
+Indexing: Lists are zero-indexed, meaning the first element has an index of 0.
+Slicing: Allows extraction of sublists using the syntax mylist[start:end].
+List Operations:
+
+Creation: Lists can be created using square brackets ([]) or the list() constructor.
+Querying:
+Access single elements using mylist[index].
+Retrieve sublists using slicing.
+Check membership using in.
+Count occurrences of an element using mylist.count(x).
+Modification:
+Insertion: Use append(), extend(), or insert().
+Removal: Use remove(), pop().
+Replacement: Replace elements or sublists by assigning to an index or slice.
+Rearrangement: Sort with sort() or reverse with reverse().
+Looping and Iteration:
+
+Iterate over lists using for loops.
+Use the range() function for generating sequences of numbers.
+Anonymous Functions (lambda):
+
+Create small, unnamed functions using lambda for quick, in-place operations.
+Python Dictionaries:
+What is a Dictionary?
+
+Definition: A dictionary is a collection of key-value pairs, where keys are unique and map to values.
+Key Characteristics:
+Keys must be immutable (e.g., integers, strings, tuples).
+Values can be of any type.
+No duplicate keys are allowed.
+Dictionary Operations:
+
+Creation: Create using {} or dict().
+Accessing: Access values using dict[key].
+Modification: Add or update key-value pairs using dict[key] = value.
+Iteration: Use for loops to iterate over keys, values, or key-value pairs.
+Deletion: Remove pairs using del dict[key] or pop(key).
+Common Use Cases:
+
+Lookup Tables: Quickly find a value based on a unique key.
+Grouping Data: Organize related information into key-value pairs.
+Counting Elements: Use dictionaries to count occurrences of items.
+Key Takeaways:
+Lists are versatile and can handle various types of data, making them ideal for sequences where order matters.
+Dictionaries are optimized for quick lookups and are essential for situations where data is associated with unique keys.
+Both lists and dictionaries support various operations that allow for easy data manipulation, querying, and iteration, making them powerful tools in Python programming.
+
+
+
 ### [Python Part 2](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20-%20Part2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### [Python Intro](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20Intro)
 
