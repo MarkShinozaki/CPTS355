@@ -270,6 +270,31 @@ Abstraction: Higher-order functions encapsulate common patterns of computation, 
 
 ## [Python](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON)
 
+### [Python Intro](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20Intro)
+
+Getting Started with Python:
+
+Installation: Instructions on how to download and install Python from the official website. Emphasis on installing Python 3, not Python 2.7.
+IDLE and VSCode: Python comes with IDLE, its integrated development environment. Additionally, the lecture recommends using VSCode with the Python extension for a more versatile coding environment.
+JupyterLab: Installation and use of JupyterLab, a web-based interactive development environment for Python notebooks and code.
+Running Python Code:
+
+Command Line Execution: How to run Python scripts from the terminal using the command python myfile.py.
+REPL (Read-Eval-Print Loop): Python can be run interactively in the REPL, allowing for real-time code evaluation. The REPL is also used for importing and testing modules.
+Python 2 vs Python 3:
+
+Version Differences: The lecture highlights the importance of using Python 3, especially on Mac and Linux systems where both Python 2 and 3 might be installed.
+Python as an Interpreted Language: Python is described as an interactive, interpreted, and object-oriented language, often compared to Ruby and Perl.
+Python Features:
+
+Dynamic Strong Typing: Python’s variables are dynamically typed, meaning that the type is determined at runtime, but it still enforces type constraints.
+Introspection: Python’s introspective capabilities allow programs to examine the type or properties of objects at runtime.
+Further Learning:
+
+Online Resources: Students are encouraged to start the Python tutorial on the official Python documentation and explore additional resources like PythonBasics.org.
+
+
+
 ### [Python - Part 1 - Basics](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20-%20Part1%20-%20Basics)
 
 Python Lists:
@@ -328,6 +353,55 @@ Both lists and dictionaries support various operations that allow for easy data 
 ### [Python Part 2](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20-%20Part2)
 
 
+Lecture 1: Higher-Order Functions in Python
+Overview: This lecture covers the concept of higher-order functions in Python, which are functions that take other functions as arguments or return them as results. It focuses on three key higher-order functions: map, filter, and reduce, and explains their implementation and usage in Python.
+
+Key Topics Discussed:
+
+Recursive Functions:
+
+Introduction to recursion and how it differs from iteration, using examples like factorial and string reversal.
+Higher-Order Functions:
+
+map: Applies a given function to each item in an iterable (e.g., a list) and returns a list of results.
+filter: Filters elements of an iterable that meet a condition defined by a predicate function.
+reduce: Combines elements of an iterable into a single value using a binary function (e.g., summing a list of numbers).
+Implementations:
+
+Custom implementations of map, filter, and reduce to show how they work internally.
+Discussion on the differences between Python’s built-in functions and these custom implementations.
+Additional Remarks:
+
+These functions work on any iterable, not just lists, and are useful for functional programming in Python.
+Takeaways:
+
+Higher-order functions provide a concise and readable way to process data in Python, replacing explicit loops with functional patterns.
+Lecture 2: Python Classes, Iterators, and Streams
+Overview: This lecture introduces the concepts of object-oriented programming in Python, focusing on classes, methods, and the implementation of iterators and streams. It covers how to create and use classes, define methods, and implement lazy evaluation using iterators and streams.
+
+Key Topics Discussed:
+
+The Class Statement:
+
+How to define a class in Python, including the use of the __init__ method for initialization and creating object instances.
+Object Identity:
+
+The uniqueness of object instances and how identity is managed using the is and is not operators.
+Class Methods:
+
+Defining methods within a class and how they differ from regular functions. Examples include deposit and withdraw methods for a bank account class.
+Iterators:
+
+Iterators provide a way to access elements in a sequence one at a time without needing to store the entire sequence in memory. Examples include custom iterators and the use of __iter__ and __next__.
+Generators:
+
+Generators simplify iterator implementation using the yield statement, allowing for cleaner and more efficient code.
+Streams:
+
+Streams are a way to represent and compute infinite sequences lazily. This lecture covers how to implement streams using nested delayed evaluation and compute elements only when needed.
+Takeaways:
+
+Classes and iterators provide powerful abstractions for structuring Python programs, while generators and streams enable efficient handling of large or infinite data sequences.
 
 
 
@@ -347,7 +421,6 @@ Both lists and dictionaries support various operations that allow for easy data 
 
 
 
-### [Python Intro](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON/Python%20Intro)
 
 
 
