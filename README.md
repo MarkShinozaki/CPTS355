@@ -6,17 +6,17 @@
 
 ### NAVIGATION OF ALL MATERIAL 
 
-### 1. [Course Information]()
+### 1. [Course Information](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Course-Information)
 ---
-### 2. [Additional Resources]()
+### 2. [Additional Resources](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Additional-Resources)
 ---
-### 3. [Lectures-Notes]()
+### 3. [Lectures-Notes](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes)
 --- 
-### 4. [Homeworks]()
+### 4. [Assignments](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments)
 ---
-### 5. [Labs]()
+### 5. [Labs](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Labs)
 ---
-### 6. [Sample Midterm Exams]()
+### 6. [Sample Midterm Exams](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Sample-Midterm-Exams)
 
 --- 
 
