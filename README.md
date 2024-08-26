@@ -153,56 +153,71 @@ preOrderTri (TriNode x t1 t2 t3) = [x] ++ preOrderTri t1 ++ preOrderTri t2 ++ pr
 
 ### [Why Funcional Programming](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL/Why-Functional-Programming)
 
-Reflection on Functional Programming:
+##### 1. Reflection on Functional Programming:
 
-Discussion Points: Students are encouraged to reflect on their biggest takeaways from learning Haskell, challenges faced, and future plans to explore functional programming further.
-Importance of Functional Programming:
+- **Discussion Points**: Students are encouraged to reflect on their biggest takeaways from learning Haskell, challenges faced, and future plans to explore functional programming further.
 
-Key Features:
-Heavy reliance on recursion.
-Functions as first-class objects.
-Use of higher-order functions.
-Unique data types via constructs like data.
-Reasons for Study: Functional programming helps in writing correct, elegant, and efficient software and has historically been ahead of its time, influencing many modern programming practices.
-Historical Impact of Functional Languages:
+##### 2. Importance of Functional Programming:
 
-Pioneering Features: Concepts such as garbage collection, generics, higher-order functions, and type inference were pioneered by functional languages long before they became mainstream in languages like Java, C#, and Python.
-Recursion: Initially controversial in the 1960s, recursion is now a fundamental concept in many modern programming languages.
-Future of Functional Programming:
+- **Key Features**:
+  - Heavy reliance on recursion.
+  - Functions as first-class objects.
+  - Use of higher-order functions.
+  - Unique data types via constructs like data.
 
-Emerging Trends: The lecture predicts that pattern-matching, currying, and other functional paradigms may become more mainstream in the future.
-Recent Developments in Functional Programming:
+- **Reasons for Study**: Functional programming helps in writing correct, elegant, and efficient software and has historically been ahead of its time, influencing many modern programming practices.
 
-Popular Functional Languages: The lecture mentions several modern functional languages such as Clojure, Erlang, F#, Haskell, OCaml, and Scala, highlighting their industry adoption and use cases.
-Adoption of Functional Concepts: Languages like C#, Java, and frameworks like MapReduce/Hadoop are increasingly adopting functional programming features.
-Combining Languages:
+##### 3. Historical Impact of Functional Languages:
 
-Haskell, Python, Java, and Postscript: These languages are presented as a complementary set, each excelling in different paradigms (functional, dynamic, and object-oriented programming).
-Real-World Programming Considerations:
+- **Pioneering Features**: Concepts such as garbage collection, generics, higher-order functions, and type inference were pioneered by functional languages long before they became mainstream in languages like Java, C#, and Python.
 
-Real Programming Needs: The lecture acknowledges that real programming extends beyond language constructs to include file I/O, string operations, floating-point arithmetic, graphics, project management, testing frameworks, and more.
-Practical Considerations:
+- **Recursion**: Initially controversial in the 1960s, recursion is now a fundamental concept in many modern programming languages.
 
-Choosing a Language: When deciding on a programming language, factors such as available libraries, tools, job prospects, industry standards, and personal familiarity are important considerations.
-Key Takeaways:
-Functional Programming's Influence: Functional programming has significantly influenced modern software development, introducing many features now common in mainstream languages.
-Industry Adoption: The concepts pioneered by functional languages are increasingly being integrated into widely-used programming languages, demonstrating the relevance of functional programming principles.
-Language Choice: The choice of programming language depends not only on its features but also on practical considerations like available tools, industry demand, and job opportunities.
+##### 4. Future of Functional Programming:
+
+- **Emerging Trends**: The lecture predicts that pattern-matching, currying, and other functional paradigms may become more mainstream in the future.
+
+##### 5. Recent Developments in Functional Programming:
+
+- **Popular Functional Languages**: The lecture mentions several modern functional languages such as Clojure, Erlang, F#, Haskell, OCaml, and Scala, highlighting their industry adoption and use cases.
+
+- **Adoption of Functional Concepts**: Languages like C#, Java, and frameworks like MapReduce/Hadoop are increasingly adopting functional programming features.
+
+##### 6. Combining Languages:
+
+- **Haskell, Python, Java, and Postscript**: These languages are presented as a complementary set, each excelling in different paradigms (functional, dynamic, and object-oriented programming).
+
+##### 7. Real-World Programming Considerations:
+
+- **Real Programming Needs**: The lecture acknowledges that real programming extends beyond language constructs to include file I/O, string operations, floating-point arithmetic, graphics, project management, testing frameworks, and more.
+
+##### 8. Practical Considerations:
+
+- **Choosing a Language**: When deciding on a programming language, factors such as available libraries, tools, job prospects, industry standards, and personal familiarity are important considerations.
+
+### Key Takeaways:
+- **Functional Programming's Influence**: Functional programming has significantly influenced modern software development, introducing many features now common in mainstream languages.
+
+- **Industry Adoption**: The concepts pioneered by functional languages are increasingly being integrated into widely-used programming languages, demonstrating the relevance of functional programming principles.
+
+- **Language Choice**: The choice of programming language depends not only on its features but also on practical considerations like available tools, industry demand, and job opportunities.
 
 
 
 ### [Higher Order Functions Class Excercise](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL/Higher-Order-Functions-Class-Excercises)
 
-Higher-Order Functions:
+##### 1. Higher-Order Functions:
 
-Definition: Functions that take other functions as arguments or return them as results.
-Key Functions:
-map: Applies a function to each element in a list.
-filter: Selects elements from a list that satisfy a predicate.
-foldr/foldl: Reduces a list to a single value by recursively applying a function.
-Class Exercises:
+- Definition: Functions that take other functions as arguments or return them as results.
 
-get_seconds:
+- Key Functions:
+  - map: Applies a function to each element in a list.
+  - filter: Selects elements from a list that satisfy a predicate.
+  - foldr/foldl: Reduces a list to a single value by recursively applying a function.
+
+##### 2. Class Exercises:
+
+###### get_seconds:
 
 Task: Extract the second element from each tuple in a list.
 Key Function: map
