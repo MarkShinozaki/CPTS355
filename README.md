@@ -11,6 +11,9 @@
 ### 2. [Additional Resources](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Additional-Resources)
 ---
 ### 3. [Lectures-Notes](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes)
+
+- #### [HASKELL](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/HASKELL)
+- #### [PYTHON](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Lecture-Notes/PYTHON)
 --- 
 ### 4. [Assignments](https://github.com/MarkShinozaki/CPTS355-ProgramLanguageDesign/tree/Assignments)
 
